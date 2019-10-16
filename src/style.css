@@ -1,6 +1,5 @@
 @import "./css/reset.css";
 @import "./css/vars.css";
-@import "./css/header.css";
 
 html {
   box-sizing: border-box;
@@ -13,59 +12,75 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  font-size: 2rem;
-  font-family: Georgia;
-  /* [TODOLABO]: maak gebruik van de --margin variabele */
-  padding: calc((2rem * 2) + 2vw); /* [TODOLABO]: fyi, dit is een voorbeeld van reduced calc test: bekijk output in gebundelde CSS */
-  /* [TODOLABO]: maak gebruik van de backgroundColor variabele */
-  background-color: #eaeae9;
-  /* [TODOLABO]: maak gebruik van de textColor variabele */
-  color: #463636;
-}
-
-/** Dit is hier wat commentaar, dat er uit moet in production**/
-
 p {
   line-height: calc(1.8);
 }
 
-strong {
-  font-weight: bold;
 
-  @nest p & {
-    /** [TODOLABO]: enkel om @nest  voorbeeld aan te halen, je hoeft niets aan te passen **/
-    color: darkorange;
-  }
-}
-
-.nadar-img {
-  filter: grayscale(100%);
-  margin: 1rem auto;
-  display: block;
-  width: 50vw;
-}
-
-.nadar-img:hover {
-  filter: none;
-}
-/** [TODOLABO]: maak gebruik van &:hover in .nadar-img (nesting) ipv .nadar-img:hover */
-
-footer {
-  background-image: url("assets/img/nadar.svg");
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-size: 10vw;
-  height: 7rem;
-}
-
-.hide {
+.hidden, .visually-hidden {
   display: none;
 }
-
-/** [TODOLABO]: maak gebruik van nieuwe media query syntax */
-@media screen and (min-width: 500px) {
-  h1 {
-    font-size: 6vw;
-  }
+.header__titles{
+  padding: 3rem;
+  background-color: #F9D2CB;
+  display: flex;
+}
+.h2-like{
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+.h1-like{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.6rem;
+  padding-top: 0.6rem;
+}
+.prices{
+  background-color: #F9D2CB;
+  padding: 0rem 3rem 3rem 3rem;
+}
+.price{
+  background-color: white;
+  border-radius: 0.6rem;
+  padding: 1.2rem;
+}
+.price__button__name{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+}
+.price__button__amount{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #9C9C9C;
+  margin-top: 0.8rem;
+}
+.price__button__plus{
+  background-color: #A3F4DC;
+  padding: 1rem 1.2rem;
+  font-size: 2.4rem;
+  border-radius: 0.4rem;
+}
+.price__button__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.prices__list{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.1rem;
+  grid-auto-flow: column;
+}
+.price__button{
+  display: flex;
+  justify-content: space-between;
 }
