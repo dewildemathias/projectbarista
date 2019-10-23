@@ -1,86 +1,25 @@
-@import "./css/reset.css";
-@import "./css/vars.css";
+@import './css/reset.css';
+@import './css/vars.css';
+@import './css/header.css';
+@import './css/order.css';
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-
+/* stylelint-disable */
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
+/* stylelint-enable */
 
 p {
   line-height: calc(1.8);
 }
 
-
-.hidden, .visually-hidden {
+.hidden,
+.visually-hidden {
   display: none;
-}
-.header__titles{
-  padding: 3rem;
-  background-color: #F9D2CB;
-  display: flex;
-}
-.h2-like{
-  text-transform: uppercase;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-}
-.h1-like{
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 2.6rem;
-  padding-top: 0.6rem;
-}
-.prices{
-  background-color: #F9D2CB;
-  padding: 0rem 3rem 3rem 3rem;
-}
-.price{
-  background-color: white;
-  border-radius: 0.6rem;
-  padding: 1.2rem;
-}
-.price__button__name{
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.8rem;
-}
-.price__button__amount{
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.2rem;
-  color: #9C9C9C;
-  margin-top: 0.8rem;
-}
-.price__button__plus{
-  background-color: #A3F4DC;
-  padding: 1rem 1.2rem;
-  font-size: 2.4rem;
-  border-radius: 0.4rem;
-}
-.price__button__wrapper{
-  display: flex;
-  flex-direction: column;
-}
-.prices__list{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1.1rem;
-  grid-auto-flow: column;
-}
-.price__button{
-  display: flex;
-  justify-content: space-between;
 }

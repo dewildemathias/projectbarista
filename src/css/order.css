@@ -1,0 +1,24 @@
+.title_mini{
+  margin: 3rem 0 1.5rem 3rem;
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+}
+.emptystate{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+}
+.coffee-maker{
+  margin-bottom: 1.5rem;
+}
+.emptystate__content{
+  font-size: 1.8rem;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #9C9C9C;
+}
