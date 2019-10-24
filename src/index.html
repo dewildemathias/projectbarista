@@ -68,26 +68,40 @@
       <h2 class="title_mini">Order</h2>
       <div class="orders__wrapper hide">
         <ul class="orders">
-          <!--
-              Order template
               <li class="order">
-                <span class="order__name">
-                  <span class="order__amount">{amount} x</span> {drink.name}
+                <span class="order__name order__name--left">
+                  <span class="order__amount">1x</span>Oat Latte
                 </span>
-                <span class="order__price">&euro; {total}</span>
+                <span class="order__price">&euro; 3,50</span>
                 <button class="remove">
                   x
                 </button>
               </li>
-            -->
+              <li class="order">
+                <span class="order__name order__name--left">
+                  <span class="order__amount">1x</span>Oat Latte
+                </span>
+                <span class="order__price">&euro; 3,50</span>
+                <button class="remove">
+                  x
+                </button>
+              </li>
+              <li class="order">
+                <span class="order__name order__name--left">
+                  <span class="order__amount">1x</span>Oat Latte
+                </span>
+                <span class="order__price">&euro; 3,50</span>
+                <button class="remove">
+                  x
+                </button>
+              </li>
         </ul>
-        <!--
         <p class="total">
-          <span class="total__label">Total price</span>
-          <span class="total__price">&euro; <span>0,00</span></span>
+          <span class="total__label">Total</span>
+          <span class="total__price">&euro; <span>11,50</span></span>
         </p>
-      -->
       </div>
+      <!--
       <div class="emptystate">
         <img class="coffee-maker" srcset="./assets/img/coffee-maker.jpg 67w,
           ./assets/img/coffee-maker@2x.jpg 134w" sizes="67px" src="./assets/img/coffee-maker.jpg" alt="A coffee maker">
@@ -99,8 +113,23 @@
           </span>
         </span>
       </div>
+      -->
     </section>
   </main>
+  <footer class="footernav">
+    <div class="nav__elementwrapper">
+      <img src="./assets/img/home_active.png" alt="home_active" class="nav__element">
+      <p class="nav__element--text nav__element--text--active">Home</p>
+    </div>
+    <div class="nav__elementwrapper">
+      <img src="./assets/img/about_inactive.png" alt="about_inactive" class="nav__element">
+      <p class="nav__element--text">About</p>
+    </div>
+    <div class="nav__elementwrapper">
+      <img src="./assets/img/admin_inactive.png" alt="admin_inactive" class="nav__element">
+      <p class="nav__element--text">Admin</p>
+    </div>
+  </footer>
 </body>
 
 </html>

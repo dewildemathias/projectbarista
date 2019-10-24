@@ -1,0 +1,22 @@
+.footernav {
+  background-color: #212121;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav__element--text {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #564f4f;
+}
+
+.nav__element--text--active {
+  color: #b7b7b7;
+}
+
+.nav__elementwrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 1.8rem 0 1rem;
+}

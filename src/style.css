@@ -2,6 +2,7 @@
 @import './css/vars.css';
 @import './css/header.css';
 @import './css/order.css';
+@import './css/footer.css';
 
 html {
   box-sizing: border-box;
@@ -15,6 +16,12 @@ html {
 }
 /* stylelint-enable */
 
+body{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+}
 p {
   line-height: calc(1.8);
 }

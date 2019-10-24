@@ -1,24 +1,40 @@
-.title_mini{
+.title_mini {
   margin: 3rem 0 1.5rem 3rem;
   text-transform: uppercase;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-
 }
-.emptystate{
+
+.emptystate {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   align-items: center;
 }
-.coffee-maker{
+
+.coffee-maker {
   margin-bottom: 1.5rem;
 }
-.emptystate__content{
-  font-size: 1.8rem;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  color: #9C9C9C;
+
+.emptystate__content {
+  color: #9c9c9c;
+}
+
+.orders {
+  padding: 0 3rem;
+}
+
+.order {
+  border-bottom: .1rem solid #efefef;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.6rem 0;
+}
+
+.order__name--left {
+  margin-right: auto;
+}
+
+.order__amount {
+  color: #f9d2cb;
+  margin-right: 1.2rem;
+  font-weight: bold;
 }

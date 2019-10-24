@@ -6,16 +6,11 @@
 
 .h2-like {
   text-transform: uppercase;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 1.2rem;
   line-height: 1.4rem;
 }
 
 .h1-like {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 2.6rem;
   padding-top: .6rem;
@@ -32,17 +27,7 @@
   padding: 1.2rem;
 }
 
-.price__button__name {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.8rem;
-}
-
 .price__button__amount {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 1.2rem;
   color: #9c9c9c;
   margin-top: .8rem;
