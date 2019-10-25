@@ -8,20 +8,23 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+
 /* stylelint-disable */
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
+
 /* stylelint-enable */
 
-body{
+body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
 }
+
 p {
   line-height: calc(1.8);
 }
@@ -29,4 +32,57 @@ p {
 .hidden,
 .visually-hidden {
   display: none;
+}
+
+@media only screen and (min-width: 411px) {
+
+  .header__titles {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      'headertext headerimg';
+  }
+
+  .header__text {
+    grid-area: headertext;
+  }
+
+  .header__image {
+    grid-area: headerimg;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'prices'
+      'content';
+  }
+}
+
+@media only screen and (min-width: 828px) {
+
+  .layout {
+    display: grid;
+    grid-template-columns: 30.5rem 1fr;
+    grid-template-areas:
+      'header content'
+      'prices content';
+  }
+
+  .prices {
+    grid-area: prices;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .prices__list {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+
 }

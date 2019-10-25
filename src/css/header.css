@@ -1,7 +1,10 @@
-.header__titles {
-  padding: 3rem;
+.header {
+  padding-top: 3rem;
   background-color: #f9d2cb;
-  display: flex;
+}
+
+.header__titles {
+  padding: 0 3rem 3rem;
 }
 
 .h2-like {

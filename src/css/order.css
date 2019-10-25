@@ -22,6 +22,12 @@
   padding: 0 3rem;
 }
 
+.total {
+  padding: 2rem 0 2rem 3rem;
+  background-color: #fafafa;
+  border-top: .1rem solid #efefef;
+}
+
 .order {
   border-bottom: .1rem solid #efefef;
   display: flex;
@@ -37,4 +43,17 @@
   color: #f9d2cb;
   margin-right: 1.2rem;
   font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.orders__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
