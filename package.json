@@ -29,7 +29,7 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development",
     "prod": "rm -rf dist/ && webpack --mode production",
-    "build": "my-framework build --output public"
+    "build": "yarn prod --output public"
   },
   "browserslist": [
     "last 2 versions",
